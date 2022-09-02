@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector:</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: bisque;
+        }
+        .navigation{
+            font-family: 'Bree Serif', serif;
+            font-size: 25px;
+            font-family: serif;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 18px;
+        }
+        section{
+            /* border: 2px solid palegreen; */
+            font-family: 'Bree Serif', serif;
+            height: 450px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 4px 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1572985025058-f27aeca1b8bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Languages</li>
+                <li class="item">Projects</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding World!</h1>
+        <p>Computer Coding is one of the fastest growing professions in coming times where almost every task is technology based. NSPL RTC offers a plethora of coding classes in Jaipur, targeted to new and beginning coders. We provides excellent learning environment & teach coding in Java, Python, HTML, C, C++ etc. at Jaipur with smooth and effective way.
+
+        Childhood is a great time to start learning coding concepts because young children can learn coding quickly and easily than adults. So get started as a junior programmer in the coding courses of your choice and gain the experience in IT world directly from the IT Company.</p>
+    </section>
+</body>
+</html>
